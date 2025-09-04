@@ -1,0 +1,52 @@
+:root{
+    --brand-primary: #ffffff; 
+    --brand-accent:  #d91484; 
+  }
+  .navbar {
+    background: linear-gradient(90deg, var(--brand-primary), #d91484);
+  }
+  .navbar .navbar-brand span.logo {
+    width: 36px; height: 36px; display:inline-grid; place-items:center; font-weight:700;
+    border-radius:50%; background:#fff;color:var(--brand-primary); margin-right:.5rem;
+  }
+  .hero {
+    background: radial-gradient(1200px 400px at 10% 0%, rgba(134,197,255,.15), transparent),
+                linear-gradient(180deg, rgba(13,110,253,.05), transparent 60%);
+  }
+  .hero h1 { letter-spacing: .3px; }
+
+  .card-product { transition: transform .15s ease, box-shadow .15s ease; }
+  .card-product:hover { transform: translateY(-2px); box-shadow: 0 0.5rem 1rem rgba(0,0,0,.12); }
+  .price { font-size: 1.125rem; font-weight: 700; }
+  .old-price { text-decoration: line-through; opacity: .55; font-weight: 500; }
+  .rating i { font-size: .95rem; }
+  .badge-brand { background: var(--brand-primary); }
+
+
+.btn-primary{
+    --bs-btn-bg: #d91484;
+    --bs-btn-border-color: #d91484;
+    --bs-btn-hover-bg: #c11375;
+    --bs-btn-hover-border-color: #c11375;
+    --bs-btn-active-bg: #a70f66;
+    --bs-btn-active-border-color: #a70f66;
+    --bs-btn-disabled-bg: #d91484;
+    --bs-btn-disabled-border-color: #d91484;
+  }
+  
+  /* (Opcional) Deixe o outline-primary combinando */
+  .btn-outline-primary{
+    --bs-btn-color: #d91484;
+    --bs-btn-border-color: #d91484;
+    --bs-btn-hover-bg: #d91484;
+    --bs-btn-hover-border-color: #d91484;
+    --bs-btn-active-bg: #d91484;
+    --bs-btn-active-border-color: #d91484;
+    --bs-btn-disabled-color: #d91484;
+    --bs-btn-disabled-border-color: #d91484;
+  }
+  
+
+  @media (min-width: 992px){
+    .hero { padding-block: 4.5rem; }
+  }
